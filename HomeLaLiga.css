@@ -1,0 +1,34 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.standings-container,
+.top-scorers-container,
+.assist-providers-container,
+.matches-container {
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}

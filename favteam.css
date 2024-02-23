@@ -1,0 +1,25 @@
+.favteam-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .favteam-item {
+    flex: 1 0 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .favteam-item img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favteam-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
