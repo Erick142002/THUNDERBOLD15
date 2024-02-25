@@ -97,12 +97,6 @@ function HomeLaLiga() {
           ))}
         </ol>
       </div>
-
-      <div className="recent-results-container">
-        <h2>Resultados Recientes</h2>
-        <ul className="recent-results-list">
-        </ul>
-      </div>
     </div>
   );
 }
