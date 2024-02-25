@@ -7,7 +7,7 @@ function Ligue1() {
   const [topScorers, setTopScorers] = useState([]);
   const [leagueStandings, setLeagueStandings] = useState([]);
   const [topAssistProviders, setTopAssistProviders] = useState([]);
-  const [recentResults, setRecentResults] = useState([]);
+
 
   // Encapsulando la llamada a la API en una función
   const fetchData = () => {
@@ -69,7 +69,6 @@ function Ligue1() {
     })
     .then(response => response.json())
     .then(data => {
-      setRecentResults(data.response);
     })
     .catch(err => {
       console.error(err);
@@ -109,15 +108,6 @@ function Ligue1() {
             <li key={index}>{provider.player.name} - Asistencias: {provider.statistics[0].goals.assists}</li>
           ))}
         </ol>
-      </div>
-
-      <div className="recent-results-container">
-        <h2>Resultados Recientes</h2>
-        <ul className="recent-results-list">
-          {recentResults.map((result, index) => (
-            <li key={index}>{result.teams.home.name} {result.fixture.goals.home} - {result.fixture.goals.away} {result.teams.away.name}</li>
-          ))}
-        </ul>
       </div>
     </div>
   );
